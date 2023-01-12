@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+      
+<form action="/policy/request" method="POST" >
+    <div style="padding: 35px;" class="mb-3">
+      
+      <br>
+      <label for="policy_type" class="form-label"> 조회할 정보를 입력하세요</label>
+      <input type="text" class="form-control" id="policy_type" name="policy_type">
+      <div id="metroHelp" class="form-text">  예: 정책자금, 성장지원, 재기지원, 창업지원, 전통시장활성화, 보증지원</div>
+    
+      <br>
+      <button type="submit" class="btn btn-primary">  확인</button>
+    </div>
+  </form>
+      
+{% endblock %}

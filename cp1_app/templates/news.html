@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+      
+<form action="/news/request" method="POST" >
+    <div style="padding: 35px;" class="mb-3">
+      
+      <br>
+      <label for="page_num" class="form-label"> 조회할 페이지를 입력하세요</label>
+      <input type="number" class="form-control" id="page_num" name="page_num">
+      
+    
+      <br>
+      <button type="submit" class="btn btn-primary">  확인</button>
+    </div>
+  </form>
+      
+{% endblock %}
